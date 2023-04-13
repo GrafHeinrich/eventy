@@ -1,0 +1,14 @@
+{
+  "name": "eventy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/GrafHeinrich/eventy.git",
+  "author": "Heiner <heinerbihl@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0"
+  }
+}
