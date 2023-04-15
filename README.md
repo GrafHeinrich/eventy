@@ -8,6 +8,8 @@ Furthermore, the bot should announce at certain intervals that an event takes pl
 
 ### Current Status: Basic bot structure with commands from the official discord.js tutorial
 
+- Have a look at the [discord.js guide](https://discordjs.guide/).
+
 ## Development
 Get started developing by creating a `config.json` file and filling in these values:
 ```
@@ -17,3 +19,12 @@ Get started developing by creating a `config.json` file and filling in these val
 	"guildId": "your-server-id-goes-here"
 }
 ```
+
+You can run `npx eslint-config-prettier .\index.js` to check for unnecessary eslint config values. (Only necessary when using prettier, as the esling config might clash with it and display annoying red squiggly lines.)
+
+### Available commands
+- **start** - Uses a global installation of pm2 to start the bot process (Run `yarn global add pm2` to use pm2.)
+- **start:silent** - Start without pm2 by just running `node .`
+- **stop** - Stops the bot process started by pm2
+- **dev** - Restarts the bot on every new save of a file. Useful for developing.
+- **monitor** - Shows monitoring of the bot process started by pm2, e.g. console.log

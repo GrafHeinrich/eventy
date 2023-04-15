@@ -5,10 +5,18 @@
   "repository": "https://github.com/GrafHeinrich/eventy.git",
   "author": "Heiner <heinerbihl@gmail.com>",
   "license": "MIT",
+  "scripts": {
+		"start": "pm2 start index.js",
+    "start:silent": "node .",
+		"stop": "pm2 stop index.js",
+		"dev": "pm2 start index.js --watch",
+		"monitor": "pm2 monit"
+	},
   "dependencies": {
     "discord.js": "^14.9.0"
   },
   "devDependencies": {
-    "eslint": "^8.38.0"
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0"
   }
 }
